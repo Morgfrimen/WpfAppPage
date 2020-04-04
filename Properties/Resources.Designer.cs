@@ -61,11 +61,29 @@ namespace WpfAppPage.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Назад.
+        /// </summary>
+        public static string MainPage_Button_Back {
+            get {
+                return ResourceManager.GetString("MainPage_Button_Back", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Дальше.
+        /// </summary>
+        public static string MainPage_Button_Go {
+            get {
+                return ResourceManager.GetString("MainPage_Button_Go", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Принять.
         /// </summary>
-        public static string ButtonRun {
+        public static string MainPage_Button_Run {
             get {
-                return ResourceManager.GetString("ButtonRun", resourceCulture);
+                return ResourceManager.GetString("MainPage_Button_Run", resourceCulture);
             }
         }
     }

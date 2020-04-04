@@ -117,7 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ButtonRun" xml:space="preserve">
+  <data name="MainPage_Button_Back" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="MainPage_Button_Go" xml:space="preserve">
+    <value>Дальше</value>
+  </data>
+  <data name="MainPage_Button_Run" xml:space="preserve">
     <value>Принять</value>
   </data>
 </root>
