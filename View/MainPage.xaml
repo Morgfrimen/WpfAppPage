@@ -18,13 +18,11 @@
 
     <Grid Style="{StaticResource StyleMainPageGrid}">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0.2*" MinWidth="100"/>
+            <ColumnDefinition Width="0.05*" MinWidth="100"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Border Grid.Column="0" BorderThickness="1" BorderBrush="Black">
-
-        </Border>
-        <!--#region основной контент -->
+        
+        <!--#region подвал MainPage -->
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
@@ -36,13 +34,15 @@
             </Grid.ColumnDefinitions>
             <Button Style="{StaticResource StyleMainPageButton}"
                     Grid.Row="1" 
-                    Grid.Column="1" Content="Дальше"/>
-            <DockPanel Grid.Row="1" Grid.Column="0">
+                    Grid.Column="1" 
+                    Content="{x:Static res:Resources.MainPage_Button_Go}"/>
+            <DockPanel Grid.Row="1" Grid.Column="0"  >
                 <Button Style="{StaticResource StyleMainPageButton}"
-                        DockPanel.Dock="Left" Content="Назад"/>
+                        DockPanel.Dock="Left" 
+                        Content="{x:Static res:Resources.MainPage_Button_Back}"/>
                 <Button Style="{StaticResource StyleMainPageButton}"
-                        DockPanel.Dock="Bottom" 
-                        Content="{x:Static res:Resources.ButtonRun}"/>
+                        DockPanel.Dock="Right" 
+                        Content="{x:Static res:Resources.MainPage_Button_Run}"/>
             </DockPanel>
         </Grid>
         <!--#endregion-->
