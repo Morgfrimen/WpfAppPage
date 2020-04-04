@@ -23,16 +23,18 @@
         <Setter Property="FontStretch" Value="Expanded"/>
         <Setter Property="FontStyle" Value="Oblique"/>
         <Setter Property="Height" Value="30"/>
-        <Setter Property="MinWidth" Value="80"/>
-        <Setter Property="MaxWidth" Value="100"/>
-        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
-        <Style.Triggers>
+        <Setter Property="Width" Value="90" />
+        <Setter Property="Margin" Value="0"></Setter>
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <!--TODO: Временно закомментированно, так как идея использования заключалась в другом-->
+        <!--<Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
                 <Setter Property="Template">
                     <Setter.Value>
                         <ControlTemplate>
                             <Border BorderBrush="Black" BorderThickness="2">
-                                <TextBlock Text="{x:Static res:Resources.ButtonRun}"/>
+                                <TextBlock Text="{TemplateBinding Button.Content}" 
+                                           Foreground="Black"/>
                             </Border>
                         </ControlTemplate>
                     </Setter.Value>
@@ -41,7 +43,7 @@
                 <Setter Property="BorderThickness" Value="5"/>
                 <Setter Property="BorderBrush" Value="Black"/>
             </Trigger>
-        </Style.Triggers>
+        </Style.Triggers>-->
 
     </Style>
 
