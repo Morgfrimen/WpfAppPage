@@ -7,6 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="lib\**" />
+    <Compile Remove="test\**" />
+    <EmbeddedResource Remove="lib\**" />
+    <EmbeddedResource Remove="test\**" />
+    <None Remove="lib\**" />
+    <None Remove="test\**" />
+    <Page Remove="lib\**" />
+    <Page Remove="test\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Models\" />
   </ItemGroup>
 
